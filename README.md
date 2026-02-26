@@ -72,9 +72,9 @@ cd pix-script
 
 ### Execute o analisador
 
-python3 pix_lexer.py entrada.pix
+python3 src/pix_lexer.py exemplos/entrada.pix
 ou
-python pix_lexer.py entrada.pix
+python src/pix_lexer.py exemplos/entrada.pix
 
 ### Exemplo de entrada
 
