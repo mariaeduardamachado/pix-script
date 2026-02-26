@@ -1,0 +1,33 @@
+LEDGER SistemaPix
+
+LET @nome <- 'Maria Eduarda'
+LET #idade <- 22
+LET $saldo <- 1500.75
+LET ?temSaldo <- TRUE
+LET !chavePix <- "maria@email.com"
+
+$> 'Iniciando verificação de saldo...'
+
+LET $valorTransferencia <- 500.00
+
+LET ?podeTransferir <- ($saldo >> $valorTransferencia && !chavePix != "")
+
+IF (?podeTransferir == TRUE) {
+    $> 'Transferência autorizada'
+    LET $novoSaldo <- $saldo -- $valorTransferencia
+    $> 'Saldo atualizado'
+}
+:: {
+    $> 'Transferência não autorizada'
+}
+
+LET $media <- (10.0 ++ 8.5 ++ 9.0) // 3
+
+IF ($media >= 9.0) {
+    $> 'Aprovada com excelência'
+}
+:: {
+    $> 'Aprovada'
+}
+
+CLOSE

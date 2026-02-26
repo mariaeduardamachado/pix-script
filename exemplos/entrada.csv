@@ -1,0 +1,11 @@
+Identificador,Tipo
+SistemaPix,IDENTIFIER
+nome,IDENTIFIER
+idade,IDENTIFIER
+saldo,IDENTIFIER
+temSaldo,IDENTIFIER
+chavePix,IDENTIFIER
+valorTransferencia,IDENTIFIER
+podeTransferir,IDENTIFIER
+novoSaldo,IDENTIFIER
+media,IDENTIFIER
