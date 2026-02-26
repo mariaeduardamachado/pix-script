@@ -67,5 +67,36 @@ O lexer reconhece, entre outros:
 
 ### 1) Clone o repositório
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
-cd <PASTA_DO_PROJETO>
+git clone https://github.com/mariaeduardamachado/pix-script.git
+cd pix-script
+
+### Execute o analisador
+
+python3 pix_lexer.py entrada.pix
+ou
+python pix_lexer.py entrada.pix
+
+### Exemplo de entrada
+
+LEDGER transferencia
+LET @nome <- 'Denecley'
+LET $valor <- 500.00
+IF ($valor >> 100.00){
+$> 'Transferindo'
+}
+CLOSE
+
+### Exemplo de saída
+
+LEDGER -> RESERVED
+transferencia -> IDENTIFIER
+LET -> RESERVED
+@ -> TYPE
+nome -> IDENTIFIER
+<- -> OPERATOR
+'Denecley' -> STRING
+...
+
+
+
+
